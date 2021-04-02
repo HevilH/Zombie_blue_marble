@@ -1,0 +1,99 @@
+Skip to content This repository Search Pull requests Issues Marketplace Gist @HevilH Sign out Unwatch 2 Star 0 Fork 1 dlwogus5038/dazuoye2
+Code Issues 0 Pull requests 0 Projects 0 Wiki Insights Tree: 1e5940fd69 Find file Copy pathdazuoye2/index.html 1e5940f 19
+minutes ago @HevilH HevilH push end 2 contributors @HevilH @dlwogus5038 RawBlameHistory 2399 lines (2176 sloc) 92.8 KB
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>2015080121_2015080123</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+    <div id="center">
+        <img id="dialog_center" src="resource/images/dialog_center.png" />
+        <img id="dialog_left" src="resource/images/dialog_left.png" />
+        <img id="dialog_right" src="resource/images/dialog_right.png" />
+        <img id="dialog_top" src="resource/images/dialog_top.png" />
+        <img id="dialog_bottom" src="resource/images/dialog_bottom.png" />
+        <img id="background" src="resource/images/background1.jpg" />
+        <img id="crater" src="resource/images/crater1.png" />
+        <img id="airplane" src="resource/images/airplane.png" />
+        <img id="gamble1" src="resource/images/gamble.png" />
+        <img id="gamble2" src="resource/images/gamble.png" />
+        <img id="blackhole" src="resource/images/blackhole.png" />
+        <img id="angel" src="resource/images/angel.png" />
+        <img id="img4" src="resource/images/4StopRight.gif"></img>
+        <img id="img3" src="resource/images/3StopRight.gif"></img>
+        <img id="img2" src="resource/images/2StopRight.gif"></img>
+        <img id="img1" src="resource/images/1StopRight.gif"></img>
+        <img id="curPlayer" src="resource/images/curPlayer.png"></img>
+        <img id="chomperBox" />
+        <img id="snowBox" />
+        <img id="peaBox" />
+        <img id="plant3" />
+        <img id="plant4" />
+        <img id="plant7" />
+        <img id="plant8" />
+        <img id="plant9" />
+        <img id="plant10" />
+        <img id="plant11" />
+        <img id="plant12" />
+        <img id="plant15" />
+        <img id="plant16" />
+        <img id="plant19" />
+        <img id="plant20" />
+        <img id="plant21" />
+        <img id="plant22" />
+        <img id="plant23" />
+        <img id="plant24" />
+        <img id="bomb" />
+        <img id="win" src="resource/images/WIN.png" />
+        <canvas id="mydice"></canvas>
+        <canvas id="usertest"></canvas>
+        <canvas id="usermoney"></canvas>
+        <canvas id="userguard"></canvas>
+        <canvas id="userpurchase"></canvas>
+        <canvas id="usermask"></canvas>
+        <canvas id="buyBox"></canvas>
+        <canvas id="cleanerCanvas"></canvas>
+        <canvas id="startCanvas"></canvas>
+        <canvas id="tutorialCanvas"></canvas>
+        <canvas id="buyBoxText"></canvas>
+        <input type="button" id="diceButton" style="background:url(resource/images/mydice.png) no-repeat;
+        width:70px;height:70px;border:none;outline:none;" onclick="clickDice()">
+        <input type="button" id="buyYes" style="background:url(resource/images/button_yes.png) no-repeat;
+        width:100px;height:40px;border:none;outline:none;" onclick="Buy()">
+        <input type="button" id="buyNo" style="background:url(resource/images/button_no.png) no-repeat;
+        width:100px;height:40px;border:none;outline:none;" onclick="cancelBuy()">
+        <input type="button" id="shieldYes" style="background:url(resource/images/button_yes.png) no-repeat;
+        width:100px;height:40px;border:none;outline:none;" onclick="useShield()">
+        <input type="button" id="shieldNo" style="background:url(resource/images/button_no.png) no-repeat;
+        width:100px;height:40px;border:none;outline:none;" onclick="cancelShield()">
+        <input type="button" id="tourButton2" value="2" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:250px;top:370px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton3" value="3" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:250px;top:270px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton4" value="4" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:250px;top:170px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton6" value="6" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:330px;top:70px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton7" value="7" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:410px;top:70px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton8" value="8" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:490px;top:70px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton9" value="9" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:570px;top:70px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton10" value="10" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:650px;top:70px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton11" value="11" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:730px;top:70px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton12" value="12" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:810px;top:70px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton14" value="14" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:890px;top:170px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton15" value="15" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:890px;top:270px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton16" value="16" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:890px;top:370px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton18" value="18" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:810px;top:470px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton19" value="19" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:730px;top:470px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton20" value="20" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:650px;top:470px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton21" value="21" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:570px;top:470px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton22" value="22" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:490px;top:470px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton23" value="23" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:410px;top:470px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+        <input type="button" id="tourButton24" value="24" onclick="goTravel(this.value)" style="width:80px;height:100px;border:none;outline:none;left:330px;top:470px;position:absolute;background:rgba(255,255,255,0);color:rgba(255,255,255,0)">
+    </div>
+
+    <script language="JavaScript" src="js/index.js"></script>
+</body>
+
+</html>
