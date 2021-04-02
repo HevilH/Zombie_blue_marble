@@ -1,0 +1,238 @@
+body {
+            overflow-y: hidden;
+            background: black;
+            user-select: none;
+        }
+        #center {
+            position: absolute;
+            width: 1400px;
+            height: 600px;
+            left: 50%;
+            top: 50%;
+            margin: -300px 0 0 -700px;
+        }
+        #background {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 5;
+        }
+        #dialog_center {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 51;
+        }
+        #dialog_top {
+            position: absolute;
+            top: -99px;
+            left: -56px;
+            z-index: 3;
+        }
+        #dialog_bottom {
+            position: absolute;
+            top: 600px;
+            left: -56px;
+            z-index: 3;
+        }
+        #dialog_left {
+            position: absolute;
+            top: 0px;
+            left: -55px;
+            z-index: 1;
+        }
+        #dialog_right {
+            position: absolute;
+            top: 0px;
+            left: 1347px;
+            z-index: 1;
+        }
+        #diceButton {
+            position: absolute;
+            top: 1300px;
+            left: 580px;
+            z-index: 9;
+        }
+        #mydice {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9;
+        }
+        #crater {
+            position: absolute;
+            left: 572px;
+            top: 330px;
+            z-index: 5;
+        }
+        #win {
+            position: absolute;
+            left: 220px;
+            top: 0px;
+            z-index: 1;
+        }
+        #img1 {
+            position: absolute;
+            left: 160px;
+            top: 430px;
+            z-index: 1;
+        }
+        #img2 {
+            position: absolute;
+            left: 180px;
+            top: 360px;
+            z-index: 1;
+        }
+        #img3 {
+            position: absolute;
+            left: 180px;
+            top: 310px;
+            z-index: 1;
+        }
+        #img4 {
+            position: absolute;
+            left: 175px;
+            top: 260px;
+            z-index: 1;
+        }
+        #usertest {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 5;
+        }
+        #usermoney {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 5;
+        }
+        #usermask {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 6;
+        }
+        #userguard {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 7;
+        }
+        #userpurchase {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 7;
+        }
+        #buyBox {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+        }
+
+        #buyBoxText {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+        }
+
+        #chomperBox {
+            position: absolute;
+            z-index: 11;
+        }
+        #peaBox {
+            position: absolute;
+            z-index: 11;
+        }
+        #snowBox {
+            position: absolute;
+            z-index: 11;
+        }
+        #buyYes {
+            position: absolute;
+            z-index: 1;
+        }
+        #buyNo {
+            position: absolute;
+            z-index: 1;
+        }
+        #airplane {
+            position: absolute;
+            z-index: 5;
+            left: 880px;
+            top: 20px;
+        }
+        #gamble1 {
+            position: absolute;
+            z-index: 5;
+            left: 240px;
+            top: 380px;
+            width: 90px;
+            height: 90px;
+        }
+        #gamble2 {
+            position: absolute;
+            z-index: 5;
+            left: 900px;
+            top: 180px;
+            width: 90px;
+            height: 90px;
+        }
+        #blackhole {
+            position: absolute;
+            z-index: 5;
+            left: 260px;
+            top: 40px;
+            width: 70px;
+            height: 90px;
+        }
+        #cleanerCanvas {
+            position: absolute;
+            z-index: 1;
+            left: 0px;
+            top: 0px;
+        }
+        #angel {
+            position: absolute;
+            z-index: 5;
+            left: 903px;
+            top: 480px;
+            width: 90px;
+            height: 90px;
+        }
+        #curPlayer {
+            position: absolute;
+            z-index: 7;
+            left: 1130px;
+            top: 65px;
+            width: 40px;
+            height: 40px;
+        }
+        #shieldYes {
+            position: absolute;
+            z-index: 1;
+        }
+        #shieldNo {
+            position: absolute;
+            z-index: 1;
+        }
+        #startCanvas {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        #bomb {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 0;
+        }
+
+        #tutorialCanvas {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
